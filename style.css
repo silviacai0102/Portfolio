@@ -50,31 +50,40 @@ section {
     position: relative;
 }
 
+/* 移除默认的 body 外边距 */
+body {
+    margin: 0;
+}
+
+/* Introduction Section */
 #intro {
     display: flex;
     align-items: stretch;
     justify-content: flex-end;
+    background: linear-gradient(to right, #aac8b9 50%, rgba(0,0,0,0)), left center / cover no-repeat;
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #aac8b9 50%, rgba(0,0,0,0)), left center / cover no-repeat;
-    height: 100vh; 
-    width: 100%; 
+    height: 100vh;
+    width: 100%;
     box-sizing: border-box;
 }
 
+/* Intro Image */
 .intro-image {
-    width: 50%; 
+    width: 50%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     border-radius: 0;
 }
 
+/* Intro Content */
 .intro-content {
-    width: 50%; 
+    width: 50%;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     color: #333;
     text-align: left;
 }
@@ -96,6 +105,21 @@ section {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    #intro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .intro-image, .intro-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-image {
+        height: 50vh;
+    }
+}
 
 
 /* Bio Comics Section */
