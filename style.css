@@ -54,30 +54,28 @@ section {
     display: flex;
     align-items: stretch;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
     background: linear-gradient(to right, #aac8b9 50%, rgba(0,0,0,0)), left center / cover no-repeat;
-    padding: 60px 0; /* 上下填充空间 */
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0; /* 去掉自动居中 */
-    width: 100vw; /* 宽度适应窗口 */
-    height: 100vh; /* 高度适应窗口 */
-    overflow: hidden; /* 避免超出窗口 */
+    height: 100vh; 
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .intro-image {
-    width: 50%; /* 宽度设置为容器的一半 */
-    height: 100%; /* 高度撑满容器 */
-    border-radius: 12px 0 0 12px;
+    width: 50%; 
+    height: 100%;
     object-fit: cover;
+    border-radius: 0;
 }
 
 .intro-content {
-    max-width: 50%;
+    width: 50%; 
     padding: 20px;
-    color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 垂直居中内容 */
+    justify-content: center; 
+    color: #333;
     text-align: left;
 }
 
