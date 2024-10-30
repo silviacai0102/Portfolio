@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#bio-comics">Bio Comics</a></li>
+                <li><a href="#art-projects">Art Projects</a></li>
+                <li><a href="#photography">Photography</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h1>Welcome to Silvia's Portfolio</h1>
+        <p>A showcase of bio comics, art projects, and photography.</p>
+    </section>
+
+    <!-- Bio Comics Section with PDF Preview -->
+    <section id="bio-comics">
+    <h2>Explore Animal Cell with Dr. Cai </h2>
+    <div class="comic-item">
+        <img src="bio%20comic/cell.png" alt="Cell Structure Preview">
+        <div class="comic-content">
+            <h3>Cell Structure (Animal Cell)</h3>
+            <p>Explore the intricacies of animal cell structure in this engaging comic format.</p>
+            <button onclick="openPortfolio('bio%20comic/Cell%20structure%20(Animal%20cell).pdf')">Read More</button>
+        </div>
+    </div>
+    <div class="comic-item">
+        <img src="bio%20comic/cellular.png" alt="Cellular Respiration Preview">
+        <div class="comic-content">
+            <h3>Cellular Respiration</h3>
+            <p>Dive into the process of cellular respiration and learn how cells generate energy.</p>
+            <button onclick="openPortfolio('bio%20comic/Cellular%20respiration.pdf')">Read More</button>
+        </div>
+    </div>
+    <div class="comic-item">
+        <img src="bio%20comic/dna.png" alt="DNA Replication Preview">
+        <div class="comic-content">
+            <h3>DNA Replication</h3>
+            <p>Follow the fascinating journey of DNA replication in this educational comic.</p>
+            <button onclick="openPortfolio('bio%20comic/DNA%20replication.pdf')">Read More</button>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <!-- Art Projects Section with Dynamic Slideshow -->
+    <section id="art-projects" class="art-projects-section">
+        <h2>Art Projects</h2>
+        <div class="project-cards-container">
+            <!-- Activism Project -->
+            <div class="project-card">
+                <img src="art%20projects/activism/Silvia%20Cai%20Advance%20Art%202A.jpg" alt="Activism Project Image" class="project-image">
+                <h5 class="project-title">Trapped in Laughter</h5>
+                <p class="project-description">“Trapped in Laughter” shows a drawing of a seal dressed in as a little clown. The seal is presented inside a cage, representing its illiberality and forced to perform during events. By making the cage three-dimensional, I aimed to enhance its realism, allowing viewers to feel the sense of captivity more intensely. This piece highlights the challenges and restrictions that animals face in entertainment, prompting reflection on their well-being and the ethics of using them for performance. </p>
+                <button onclick="openPortfolio('art%20projects/activism/Artivism%20Animal%20protection.pdf')" class="view-portfolio-button">View Portfolio</button>
+            </div>
+
+            <!-- Working Class Project -->
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <button class="prev" onclick="previousSlide()">❮</button>
+                    <button class="next" onclick="nextSlide()">❯</button>
+                    <div class="slides-wrapper">
+                        <img src="art%20projects/working%20class/1.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/2.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/3.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/4.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/5.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/6.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/7.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/8.jpeg" class="slideshow-image">
+                        <img src="art%20projects/working%20class/9.jpeg" class="slideshow-image">
+                    </div>
+                </div>
+                <h5 class="project-title">Endless Hour</h5>
+                <p class="project-description">Endless hour’s 3D composition shows people working through the night, symbolizing the endless workload that many companies in China place on their employees. The clay figures are presented without light or paint, giving a more direct and pure representation of the intense work pressure. In this colorless, blank state, the figures lack individuality—no hobbies, no personal thoughts—only rules set by their bosses. Their health and well-being are disregarded. I have taken photos of the unpainted clay under different lighting, which highlights the exhaustion and the limits of the man’s body under the heavy workload.</p>
+                <button onclick="openPortfolio('art%20projects/working%20class/Silvia%20Cai%20artist%20research%20process%20profolio.pdf')" class="view-portfolio-button">View Portfolio</button>
+            </div>
+
+            <!-- Identity Project -->
+            <div class="project-card">
+                <img src="art%20projects/identity/1.png" alt="Identity Project Image" class="project-image">
+                <h5 class="project-title">Identity: Fear</h5>
+                <p class="project-description">The theme of the project is identity, presenting identity using soft materials. In my initial sketches, I drew things that reflect both my personal growth and the essence of who I am. Some of the sketches depict the distance between me and others, some symbolize the fears l've overcome, and some show my personality though using of colors. In the background, dream-like symbols represent past uncertainties. These drawings illustrate my journey from vulnerability to strength, showing how I've grown and what matters most.</p>
+                <button onclick="openPortfolio('art%20projects/identity/Silvia%20Cai%20process%20portfolio.pdf')" class="view-portfolio-button">View Portfolio</button>
+            </div>
+
+
+            <!-- Laser cutting light box Project -->
+            <div class="project-card">
+                <div class="slideshow-container">
+                    <button class="prev" onclick="previousSlide()">❮</button>
+                    <button class="next" onclick="nextSlide()">❯</button>
+                    <div class="slides-wrapper">
+                        <img src="art%20projects/laser%20cutting%20light%20box/1.jpg" class="slideshow-image">
+                        <img src="art%20projects/laser%20cutting%20light%20box/2.jpg" class="slideshow-image">
+                        <img src="art%20projects/laser%20cutting%20light%20box/3.jpg" class="slideshow-image">
+                        <img src="art%20projects/laser%20cutting%20light%20box/4.jpg" class="slideshow-image">
+                        <img src="art%20projects/laser%20cutting%20light%20box/5.jpg" class="slideshow-image">
+                        <img src="art%20projects/laser%20cutting%20light%20box/6.jpg" class="slideshow-image">
+                    </div>
+                </div>
+                <h5 class="project-title">Waves Within</h5>
+                <p class="project-description">The light box “waves within” capturing the magical moment when the sea enters in my room, filling it with marine life. The layers of paper and wood, lighted from behind shows a sense of fantasy. The dolphin, the fish, and soft swirl of seaweed gives a sense of calmness. Staying with these marine visitors, I wanted to suggest an embrace of nature's mysteries. The light box structure, with its shadows and gentle lighting it evokes a soft and dream-like setting where viewers can imagine themselves drifting between the known and the unknown. </p>
+                <button onclick="openPortfolio('art%20projects/laser%20cutting%20light%20box/portfolio.pdf')" class="view-portfolio-button">View Portfolio</button>
+            </div>
+
+            <!-- Kinetic Art Work Project -->
+            <div class="project-card">
+                <!-- Image Slideshow for Additional Visuals -->
+                <div class="slideshow-container">
+                    <button class="prev" onclick="previousSlide()">❮</button>
+                    <button class="next" onclick="nextSlide()">❯</button>
+                    <div class="slides-wrapper">
+                        <img src="art%20projects/Kinetic%20art%20work/1.jpg" class="slideshow-image">
+                        <img src="art%20projects/Kinetic%20art%20work/2.jpg" class="slideshow-image">
+                        <img src="art%20projects/Kinetic%20art%20work/3.jpg" class="slideshow-image">
+                    </div>
+                </div>
+
+                <!-- Project Title, Description, and Buttons -->
+                <h5 class="project-title">Whispers of Inner Shadows</h5>
+                <p class="project-description">In this piece, I aim to communicate the complex relationship between inner fears and the illusions we create. By using mirrors to demonstrate viewers' reflections into a "ghost," I highlight how these fears can often appear as external threats, even though they originate from within us. The moving "ghost," enabled by an automaton mechanism, symbolizes the relentless pursuit of these fears, making them feel alive and dynamic. Ultimately, this work invites viewers to confront and reflect on their own self-imposed illusions. </p>
+                <div class="button-container">
+                    <button onclick="openVideoModal()" class="play-video-button">Play Video</button>
+                    <button onclick="openPortfolio('art%20projects/Kinetic%20art%20work/porfolio.pdf')" class="view-portfolio-button">View Portfolio</button>
+                </div>
+            </div>
+
+
+            <!-- Video Modal -->
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeVideoModal()">&times;</span>
+                    <video id="modalVideo" controls width="100%">
+                        <source src="art%20projects/Kinetic%20art%20work/1.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="photography-section">
+        <h2>Photography</h2>
+        <div class="photography-grid">
+            <!-- Animals -->
+            <div class="photography-project" onclick="openPhotographySlideshow('cat')">
+                <img src="pic/cat/IMG_4289.jpeg" alt="cat Thumbnail">
+                <button>Cat</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('dog rescue')">
+                <img src="pic/dog rescue/IMG_8150.JPG" alt="dog rescue Thumbnail">
+                <button>Dog Rescue</button>
+            </div>
+
+            <!-- Landscapes -->
+            <div class="photography-project" onclick="openPhotographySlideshow('Shanghai aquarium')">
+                <img src="pic/Shanghai aquarium/DV9A2782.JPG" alt="Shanghai aquarium Thumbnail">
+                <button>Shanghai Aquarium</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('ningxia')">
+                <img src="pic/ningxia/IMG_5355.jpeg" alt="ningxia Thumbnail">
+                <button>NingXia</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('Boston')">
+                <img src="pic/Boston/IMG_3354.jpeg" alt="Boston Thumbnail">
+                <button>Boston</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('street')">
+                <img src="pic/street/DSCF2343.JPG" alt="street Thumbnail">
+                <button>Street</button>
+            </div>
+
+            <!-- Events -->
+            <div class="photography-project" onclick="openPhotographySlideshow('honk (musical)')">
+                <img src="pic/honk (musical)/DV9A0921 (1).JPG" alt="honk (musical) Thumbnail">
+                <button>Honk (musical)</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('Passion ')">
+                <img src="pic/Passion /DV9A2423.JPG" alt="Passion Thumbnail">
+                <button>Passion</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('P2T 2023')">
+                <img src="pic/P2T 2023/IMG_7835.JPG" alt="P2T 2023 Thumbnail">
+                <button>P2T 2023</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('APAC band 2024')">
+                <img src="pic/APAC band 2024/IMG_2950.JPG" alt="APAC band 2024 Thumbnail">
+                <button>APAC Band 2024</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('APAC robotics')">
+                <img src="pic/APAC robotics/DV9A0180.JPG" alt="APAC robotics Thumbnail">
+                <button>APAC Robotics</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('APAC season 1 kick- off')">
+                <img src="pic/APAC season 1 kick- off/DV9A2929.jpg" alt="APAC season 1 kick- off Thumbnail">
+                <button>APAC Season One Kick-off</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('APAC table tennis')">
+                <img src="pic/APAC table tennis/DV9A0391.JPG" alt="APAC table tennis Thumbnail">
+                <button>APAC Table Tennis</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('APAC volleyball')">
+                <img src="pic/APAC volleyball/DV9A4882.JPG" alt="APAC volleyball Thumbnail">
+                <button>APAC Volleyball</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('turkey bowl')">
+                <img src="pic/turkey bowl/IMG_4473.JPG" alt="turkey bowl Thumbnail">
+                <button>Turkey Bowl</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('season one opening 2024')">
+                <img src="pic/season one opening 2024/DV9A3704.JPG" alt="season one opening 2024 Thumbnail">
+                <button>Season One Opening 2024</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('international fair 2023')">
+                <img src="pic/international fair 2023/IMG_2941.JPG" alt="international fair 2023 Thumbnail">
+                <button>International Fair 2023</button>
+            </div>
+
+            <div class="photography-project" onclick="openPhotographySlideshow('international fair 2024')">
+                <img src="pic/international fair 2024/DV9A3486.JPG" alt="international fair 2024 Thumbnail">
+                <button>International Fair 2024</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Photography Slideshow Modal -->
+    <div id="photographyModal" class="photography-modal">
+        <div class="photography-modal-content">
+            <span class="photography-close" onclick="closePhotographySlideshow()">&times;</span>
+            <div class="photography-slides-container">
+                <button class="photography-prev" onclick="changePhotographySlide(-1)">&#10094;</button>
+                <img id="photographySlideshowImage" src="" alt="Slideshow Image">
+                <button class="photography-next" onclick="changePhotographySlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Larger Portfolio Popup Modal -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePortfolio()">&times;</span>
+            <iframe id="portfolioFrame" src="" width="100%" height="90vh"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
